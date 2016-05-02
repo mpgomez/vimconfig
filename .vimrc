@@ -27,10 +27,10 @@ Plugin 'wesQ3/vim-windowswap'
 Plugin 'ekalinin/Dockerfile.vim'
 
 " JavaScript syntax
-Plugin 'jelera/vim-javascript-syntax'
+" Plugin 'jelera/vim-javascript-syntax'
 
 " Additional JavaScript magic
-Plugin 'pangloss/vim-javascript'
+" Plugin 'pangloss/vim-javascript'
 
 Plugin 'marijnh/tern_for_vim'
 let g:tern_map_keys=1
@@ -98,6 +98,9 @@ Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
+" Go integration
+Plugin 'fatih/vim-go'
+
 
 " Airline settings
 Plugin 'vim-airline/vim-airline'
@@ -148,6 +151,19 @@ set omnifunc=syntaxcomplete#Complete
 set omnifunc=csscomplete#CompleteCSS
 "autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
+# Go config
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_fmt_autosave = 0
+
+" Go condig with syntastic
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
 " colorscheme calls go after Plugin declarations
 colorscheme gruvbox
 
@@ -182,7 +198,8 @@ else
 endif
 
 " Delete trailing whitespace
-autocmd FileType python,javascript,rust autocmd BufWritePre <buffer> :%s/\s\+$//e
+"autocmd FileType python,javascript,rust autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType python,go,rust autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
