@@ -2,21 +2,26 @@
 Fork from https://github.com/zubron/vimconfig.git with Go support added (https://github.com/fatih/vim-go)
 
 ## Prerequesites
+Checkout the vim configs:
+```
+git clone git@github.com:mpgomez/vimconfig.git ~/.vim
+```
 
-Install Vundle:
+Then, checkout and install Vundle:
+```
+git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+For more info about Vundle, see:
 [Vundle](https://github.com/gmarik/Vundle.vim)
 
 ## How to use
-```
-$ git clone https://github.com/mpgomez/vimconfig ~/.vim
-```
-
 Add  the following to ~/.vimrc:
 ```
 source ~/.vim/.vimrc
 ```
 
-Open vim and install all the plugins with Vundle (run :PluginsInstall)
+Open vim and install all the plugins with Vundle (run :PluginInstall)
 
 Some extra work will be required for YouCompleteMe:
 To use YouCompleteMe you need to compile it first (for more info see YCM [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
