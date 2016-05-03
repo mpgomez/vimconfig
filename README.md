@@ -24,6 +24,12 @@ source ~/.vim/.vimrc
 Open vim and install all the plugins with Vundle (run :PluginInstall)
 
 Some extra work will be required for YouCompleteMe:
+The YouCompleteMe plugin has the following dependencies:
+```
+sudo apt-get install build-essential cmake
+sudo apt-get install python-dev python3-dev.
+```
+
 To use YouCompleteMe you need to compile it first (for more info see YCM [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
