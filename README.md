@@ -30,9 +30,11 @@ sudo apt-get install build-essential cmake
 sudo apt-get install python-dev python3-dev.
 ```
 
-To use YouCompleteMe you need to compile it first (for more info see YCM [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+To use YouCompleteMe you need to compile it first (for more info see YCM [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) )
+```
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
+```
 
 And you are ready to go!
 
