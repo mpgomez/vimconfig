@@ -47,4 +47,9 @@ The NERDTree is one of the plugins in the config. It is a nice nav tree. To open
 This is a handy config to start with if you are using vim, but you will probably want to custimize and personalize it. If you find something usefull that is not here, or something that can be improved, feel free to give me a shout! I spend lots of hours with my Vim, and the cosier and nicer it is, the better. 
 Thank you [Zubron](https://github.com/zubron) for your amazing config!
 
+## Cheatsheet
+* gd : will take you to the local definition
+* gD : will take you to the global definition
+* g\* : search the word
+* Ctrl + O : go to previous tag
 
