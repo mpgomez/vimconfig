@@ -16,4 +16,4 @@ git clone https://github.com/mpgomez/vimconfig.git ${BASE}/.vim/
 git clone https://github.com/VundleVim/Vundle.vim.git  ${BASE}/.vim/bundle/Vundle.vim/
 
 #Put vimrc in place
-cp ${BASE}/.vim/.vimrc ${BASE}/.vimr
+cp ${BASE}/.vim/.vimrc ${BASE}/.vimrc
