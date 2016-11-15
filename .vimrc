@@ -26,11 +26,10 @@ Plugin 'wesQ3/vim-windowswap'
 " Syntax for Dockerfile
 Plugin 'ekalinin/Dockerfile.vim'
 
-" JavaScript syntax
-" Plugin 'jelera/vim-javascript-syntax'
 
-" Additional JavaScript magic
-" Plugin 'pangloss/vim-javascript'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'majutsushi/tagbar'
+
 
 Plugin 'marijnh/tern_for_vim'
 let g:tern_map_keys=1
@@ -41,7 +40,6 @@ Plugin 'rust-lang/rust.vim'
 
 " Awesomeness ahead
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
 Plugin 'Raimondi/delimitMate'
 
 " Additional fun things
@@ -80,9 +78,6 @@ let g:pymode_folding = 0
 Plugin 'davidhalter/jedi-vim'
 
 Plugin 'rizzatti/dash.vim'
-
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'majutsushi/tagbar'
 
 noremap <leader>tb :TagbarToggle<cr>:TagbarTogglePause<cr>
 
@@ -144,6 +139,9 @@ Plugin 'tomasr/molokai'
 " Make gVim colorschemes works in terminal Vim
 Plugin 'godlygeek/csapprox'
 
+Plugin 'pearofducks/ansible-vim'
+" Bundle 'chase/vim-ansible-yaml'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -160,9 +158,8 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_autosave = 0
 
-" Go condig with syntastic
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+" Ansible config (pearofducks/ansible-vim)
+let g:ansible_extra_keywords_highlight = 1
 
 " colorscheme calls go after Plugin declarations
 colorscheme gruvbox

@@ -2,6 +2,13 @@
 Fork from https://github.com/zubron/vimconfig.git with Go support added (https://github.com/fatih/vim-go)
 
 ## Prerequesites
+Dependencies:
+CentOS/RedHat:
+    sudo yum install ctags-etags
+
+Ubuntu/Debian:
+    sudo apt-get install exuberant-ctags
+
 Checkout the vim configs:
 ```
 git clone git@github.com:mpgomez/vimconfig.git ~/.vim
