@@ -205,4 +205,8 @@ map <C-l> <C-W>l
 
 au BufRead,BufNewFile *.py set cc=73,80
 
+autocmd BufRead,BufNewFile *.md *.txt setlocal spell
+autocmd FileType gitcommit setlocal spell
+set complete+=kspell
+
 set nofoldenable
