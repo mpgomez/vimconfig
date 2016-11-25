@@ -196,7 +196,7 @@ endif
 
 " Delete trailing whitespace
 "autocmd FileType python,javascript,rust autocmd BufWritePre <buffer> :%s/\s\+$//e
-autocmd FileType python,go,rust autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType python,go,rust,yaml autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -208,5 +208,7 @@ au BufRead,BufNewFile *.py set cc=73,80
 autocmd BufRead,BufNewFile *.md *.txt setlocal spell
 autocmd FileType gitcommit setlocal spell
 set complete+=kspell
+au BufRead,BufNewFile *.yaml set cc=73,80
+au BufRead,BufNewFile *.md set cc=73,80
 
 set nofoldenable
